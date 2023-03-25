@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriprion" content="kasper copyright">
+    <link rel="stylesheet" href="./resources/styles/index.css">
+    <title>Kasper</title>
+</head>
+<body>
+    <div>
+        <svg display="none">
+            <symbol viewBox="0 0 7 15" id="facebook">
+                <path d="m1.7 14.2h2.9v-7h2l0.3-2.5h-2.3v-1.5c0-0.5 0.4-0.7 
+                0.7-0.7h1.5v-2.4h-2.1c-2.5 0-3 1.8-3 3v1.6h-1.4v2.5h1.4z"/>
+            </symbol>
+        </svg>
+
+        <svg display="none">
+            <symbol viewBox="0 0 14 15" id="google">
+                <path d="m8 1.4h-1.1c0.8 0.5 1.2 1.4 1.2 
+                2.4 0 0.9-0.5 1.6-1.3 2.2-0.7 0.5-0.8 0.8-0.8 1.2 0 0.4 0.9 1 1.2 1.3 1.4 1 1.7 1.7 1.7 2.9 0 1.6-1.7 
+                3.2-4.5 3.2-2.4 0-4.5-1-4.5-2.6 0-1.6 1.7-3.3 4.1-3.3q0.4 0 0.8 0c-0.3-0.3-0.6-0.6-0.6-1.1q0-0.4 0.2-0.8-0.2 
+                0.1-0.4 0.1c-2 0-3.1-1.4-3.1-3.2 0-1.7 1.7-3.3 3.8-3.3h4.2zm-2.3 8q-0.5-0.1-1.1-0.1c-1.7-0.1-3.1 1-3.1 2.3 0 
+                1.2 1.2 2.3 2.9 2.3 2.4 0 3.2-1 3.2-2.3q0-0.2-0.1-0.4c-0.1-0.7-0.9-1.1-1.8-1.8zm0.7-5.5c-0.2-1.5-1.1-2.7-2.2-2.8-1.2 
+                0-1.9 1.1-1.7 2.6 0.2 1.5 1.2 2.5 2.4 2.5 1.1 0.1 1.7-0.9 
+                1.5-2.3zm7.7-1.3v0.9h-1.9v2h-1v-2h-1.9v-0.9h1.9v-1.9h1v1.9z"/>
+            </symbol>
+        </svg>
+
+        <svg display="none">
+            <symbol viewBox="0 0 14 12" id="twitter">
+                <path d="m-0.2 10.2c1.3 0.8 2.8 1.3 4.5 1.3 5.3 0 8.3-4.5 8.3-8.3q0-0.2 
+                0-0.4 0.8-0.6 1.4-1.5-0.8 0.4-1.7 0.5c0.6-0.4 1.1-0.9 1.3-1.6q-0.8 0.5-1.8 0.7c-0.6-0.6-1.3-0.9-2.2-0.9-1.6 0-2.9 
+                1.3-2.9 2.9q0 0.3 0.1 0.6c-2.4-0.1-4.5-1.2-6-3q-0.4 0.7-0.4 1.5c0 1 0.5 1.9 1.3 2.4q-0.7 0-1.3-0.4v0.1c0 1.4 1 2.5 
+                2.3 2.8q-0.3 0.1-0.7 0.1-0.3 0-0.6 0c0.4 1.1 1.5 1.9 2.7 2-1 0.7-2.2 1.2-3.6 1.2q-0.3 0-0.7 0z"/>
+            </symbol>
+        </svg>
+
+        <svg display="none">
+            <symbol  viewBox="0 0 15 15" id="ball">
+                <path d="m14.4 4.6q-0.2-0.6-0.6-1.2-0.4-0.6-0.9-1.1-0.5-0.4-1-0.8-0.6-0.4-1.2-0.7-0.7-0.2-1.4-0.4-0.7-0.1-1.4-0.1-0.7 
+                0-1.4 0.1-0.7 0.2-1.4 0.4-0.6 0.3-1.2 0.7-0.5 0.4-1 0.8-0.5 0.5-0.9 1.1-0.4 0.6-0.6 1.2-0.3 0.6-0.5 1.3-0.1 0.7-0.1 
+                1.4 0 0.8 0.1 1.5 0.2 0.6 0.5 1.3 0.2 0.6 0.6 1.2 0.4 0.6 0.9 1 0.5 0.5 1 0.9 0.6 0.4 1.2 0.6 0.7 0.3 1.4 0.5 0.7 
+                0.1 1.4 0.1 0.7 0 1.4-0.1 0.7-0.2 1.4-0.5 0.6-0.2 1.2-0.6 0.5-0.4 1-0.9 0.5-0.4 0.9-1 0.4-0.6 0.6-1.2 0.3-0.7 
+                0.4-1.3 0.2-0.7 0.2-1.5 0-0.7-0.2-1.4-0.1-0.7-0.4-1.3zm-6.5-3.3c1.5 0 2.9 0.6 4 1.5 0 0-0.9 1.3-3.2 
+                2.2-1-1.9-2.1-3.4-2.2-3.5q0.7-0.2 1.4-0.2zm-1.5 0.2q0 0 0 0 0 0 0 0zm-1.1 0.4c0.1 0.1 1.2 1.6 2.3 3.5-2.9 0.7-5.5 
+                0.7-5.6 0.7 0.4-1.9 1.6-3.4 3.3-4.2zm-1.9 9.5q0 0 0 0 0 0 0 0zm0 0c-1-1.1-1.6-2.5-1.6-4.1q0-0.1 0-0.1c0.2 0 3.1 0 
+                6.3-0.9q0.2 0.5 0.5 1-0.2 0.1-0.3 0.1c-3.3 1-4.9 4-4.9 4zm0.8 0.7q0 0-0.2-0.1 0.1 0 0.2 0.1zm3.7 1.3c-1.4 
+                0-2.7-0.5-3.7-1.3 0-0.1 1.2-2.6 4.7-3.8q0 0 0.1 0c0.8 2.2 1.2 4.1 1.3 4.6q-1.1 0.5-2.4 
+                0.5zm3.4-1.1c-0.1-0.3-0.4-2.1-1.2-4.3 2-0.3 3.7 0.2 3.8 0.3-0.3 1.7-1.3 3.1-2.6 
+                4zm-1.6-5.2q0-0.2-0.1-0.3-0.2-0.5-0.4-0.9c2.4-1 3.4-2.4 3.4-2.4 0.8 1 1.3 2.3 1.4 3.8-0.1 0-2.2-0.5-4.3-0.2z"/>
+            </symbol>
+        </svg>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__logo">
+                    <img class="logo" src="./resources/images/Logo (6).png" alt="Logo">
+                </div>
+                <div class="footer__social">
+                    <div class="foter-social">
+                        <div class="footer-social__title">
+                            <h1>we are social</h1>
+                        </div>
+                        <hr class="hr">
+                        <div class="footer-social__list">
+                            <div class="footer-social__item">
+                                <a href="#" class="p-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="15">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="footer-social__item">
+                                <a href="#" class="p-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15">
+                                        <use xlink:href="#google"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="footer-social__item">
+                                <a href="#" class="p-5">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" width="14" height="12">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="footer-social__item">
+                                <a href="#" class="p-5">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                                        <use xlink:href="#ball"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <span class="white">&#169; 2014-<a href="#" class="blue">Kasper</a> All Right Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
